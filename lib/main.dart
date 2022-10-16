@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:loginappstorage/app_pages.dart';
 import 'package:loginappstorage/loginpages/login_view.dart';
+import 'package:loginappstorage/splashpages/Splash_view.dart';
 
 Future<void> main() async {
   await GetStorage.init();
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       getPages: pages,
-      initialRoute: LoginView.id,
+    initialRoute: SplashView.id,
     );
   }
 }
